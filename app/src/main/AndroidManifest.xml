@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lostfound">
+
+    <!-- 网络与定位权限：遵循最小权限原则，仅申请业务必需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CampusLostFound">
+
+        <!-- 高德地图 Key，申请后替换下方 value -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="your_amap_key" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PublishActivity" android:exported="false" />
+        <activity android:name=".ItemListActivity" android:exported="false" />
+        <activity android:name=".MapActivity" android:exported="false" />
+    </application>
+</manifest>
