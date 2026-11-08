@@ -1,0 +1,49 @@
+# 项目目录结构说明
+
+```
+campus-lost-found-android/
+├── README.md                      项目说明（先看这里）
+├── settings.gradle                工程配置（含阿里云镜像）
+├── build.gradle                   根构建脚本
+├── gradle.properties              构建参数
+├── .gitignore                     忽略规则
+├── docs/                          文档类材料
+│   ├── 开题发言稿.md              开题答辩发言稿
+│   └── 目录结构.txt              本文件
+└── app/                           应用模块
+    ├── build.gradle               模块依赖（含高德 SDK）
+    ├── proguard-rules.pro         混淆规则
+    └── src/main/
+        ├── AndroidManifest.xml    权限声明、Activity 注册、地图 Key
+        ├── java/com/example/lostfound/
+        │   ├── MainActivity.java          首页导航与统计
+        │   ├── PublishActivity.java       发布页（自动定位）
+        │   ├── ItemListActivity.java      列表页
+        │   ├── MapActivity.java           地图页（打点 + 定位）
+        │   ├── LostItem.java              实体类
+        │   ├── DBHelper.java              SQLite 封装
+        │   └── InputValidator.java        输入校验（安全加固）
+        └── res/
+            ├── layout/            页面布局
+            │   ├── activity_main.xml
+            │   ├── activity_publish.xml
+            │   ├── activity_list.xml
+            │   ├── activity_map.xml
+            │   └── item_row.xml
+            └── values/
+                ├── strings.xml
+                └── themes.xml
+```
+
+## 评分项对应关系
+
+| 评分项 | 分值 | 对应内容 |
+| --- | --- | --- |
+| 大作业报告 | 20 | docs/ 与 README，含设计流程、核心代码说明 |
+| 界面设计 | 10 | res/layout 五个页面，统一配色与留白 |
+| 演示过程 | 10 | 首页 → 发布 → 列表 → 地图完整闭环 |
+| 创新性与实用性 | 10 | 校园真实痛点，类型区分色标记 |
+| 数据存储 | 10 | SQLite 表设计 + 完整增删改查 |
+| 地图定位 | 10 | 高德 SDK 打点、定位、视野联动 |
+| 团队协同工具 | 10 | GitHub 分阶段提交记录 |
+| 个人贡献 | 20 | 见报告中的分工说明 |
