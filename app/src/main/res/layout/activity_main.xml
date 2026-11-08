@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#18263A"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="校园物品遗失与招领平台"
+        android:textColor="#69788C"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="当前共 0 条记录"
+        android:textColor="#5385BD"
+        android:textSize="15sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1E3C78"
+        android:text="发布失物 / 招领"
+        android:textColor="#FFFFFF"
+        android:onClick="goPublish" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#519D78"
+        android:text="查看失物列表"
+        android:textColor="#FFFFFF"
+        android:onClick="goList" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#5385BD"
+        android:text="地图查看点位"
+        android:textColor="#FFFFFF"
+        android:onClick="goMap" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="移动应用开发及安全 · 课程大作业"
+        android:textColor="#9AA5B1"
+        android:textSize="12sp" />
+</LinearLayout>
