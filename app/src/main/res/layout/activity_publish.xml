@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布信息"
+            android:textColor="#18263A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:hint="标题，例如：黑色雨伞"
+            android:inputType="text"
+            android:maxLength="40" />
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="描述：丢失 / 捡到的地点、特征"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="联系方式（选填）"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="类型"
+            android:textColor="#69788C"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_lost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="我丢失了" />
+
+            <RadioButton
+                android:id="@+id/rb_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我捡到了" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="位置坐标（自动定位，也可手填）"
+            android:textColor="#69788C"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="纬度 latitude"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/et_lng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="经度 longitude"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="#1E3C78"
+            android:text="提交发布"
+            android:textColor="#FFFFFF"
+            android:onClick="submit" />
+    </LinearLayout>
+</ScrollView>
