@@ -1,0 +1,24 @@
+campus-lost-found-android/
+├── README.md
+├── 开题报告.docx
+├── 开题答辩PPT.pptx
+├── 发言稿.txt
+└── app/
+    ├── build.gradle
+    └── src/
+        └── main/
+            ├── AndroidManifest.xml
+            ├── java/com/example/lostfound/
+            │   ├── MainActivity.java          // 首页
+            │   ├── LostItem.java               // 实体类
+            │   ├── DBHelper.java               // SQLite数据库
+            │   ├── PublishActivity.java        // 发布失物页面
+            │   ├── MapActivity.java            // 地图页面
+            │   └── ItemListActivity.java       // 失物列表页
+            └── res/
+                ├── layout/
+                │   ├── activity_main.xml
+                │   ├── activity_publish.xml
+                │   ├── activity_map.xml
+                │   └── activity_list.xml
+                └── values/strings.xml
