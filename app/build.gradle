@@ -31,6 +31,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.google.android.material:material:1.9.0'
+    // 3dmap 已内置定位能力，无需再单独引入 location 包（否则出现重复类冲突）
     implementation 'com.amap.api:3dmap:9.5.0'
-    implementation 'com.amap.api:location:6.4.2'
 }
